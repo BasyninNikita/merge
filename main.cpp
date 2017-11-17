@@ -57,15 +57,14 @@ void merge(int *array,int left,int right,int razd)
 	}
 	delete[]array1;
 }
-void mergesort(int *array,int left,int right) { 
+long mergesort(int *array,int left,int right) { 
 	long razd;                   
 	if (left < right)	
-	{       
+	return          
     	razd = (left + right)/2;
     	mergesort(array, left, razd);       
     	mergesort(array,razd	, right);  
     	merge(array, left, right, razd);    
-    }
 }
 
 int main(int argc, char** argv) {
